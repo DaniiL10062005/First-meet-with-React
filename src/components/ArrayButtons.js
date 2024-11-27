@@ -1,4 +1,4 @@
-import Button from './Button'
+import Button from './Button/Button'
 import { about } from './data'
 import { useState } from 'react'
 
