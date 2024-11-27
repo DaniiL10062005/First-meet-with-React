@@ -1,12 +1,10 @@
-export default function Li({ title, discription }) {
+import React from 'react'
+const Li = ({ title, discription }) => {
   return (
-    <ul className="p-5 border rounded-lg m-5">
-      <li>
-        <h1 className="text-2xl font-bold">{title}</h1>
-      </li>
-      <li>
-        <p className="text-lg">{discription}</p>
-      </li>
-    </ul>
+    <li className="p-5 border-2 border-blue-800 rounded-lg m-5">
+      <h1 className="text-2xl font-bold">{title}</h1>
+      <p className="text-xl mt-10">{discription}</p>
+    </li>
   )
 }
+export default Li

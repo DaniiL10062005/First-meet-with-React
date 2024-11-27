@@ -1,7 +1,12 @@
-export default function Button() {
+export default function Button({ children, onClick, classN, isActive }) {
   return (
-    <button className=" px-20 py-5 outline-none text-white font-bold bg-orange-600 hover:bg-orange-700 m-10 rounded-lg shadow">
-      Кнопка
+    <button
+      onClick={onClick}
+      className={`px-20 py-5 outline-none font-bold rounded-lg transition-all duration-500 active:bg-black shadow ${
+        isActive ? 'bg-black text-white m-10' : classN
+      }`}
+    >
+      {children}
     </button>
   )
 }

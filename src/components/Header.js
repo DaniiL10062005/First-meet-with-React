@@ -1,6 +1,9 @@
-const time = new Date()
+import { useState } from 'react'
 
 export default function Header() {
+  const [time, setTime] = useState(new Date())
+  setInterval(() => setTime(new Date()), 1000)
+
   return (
     <header className="flex bg-slate-500 justify-between items-center border-b-2 h-16 py-10 px-5 mb-10">
       <h3 className="text-yellow-400 text-3xl font-bold inline-block">React start</h3>
