@@ -24,7 +24,7 @@ function App() {
           onClick={() => setPage('contacts')}
           classN={'bg-gray-200 rounded-r'}
         >
-          Контакты
+          Связь
         </ButtonForHeading>
       </Header>
 

@@ -5,11 +5,16 @@ import { useState } from 'react'
 export default function ArrayButtons() {
   const [content, setContent] = useState(null)
   const [nameH, setNameH] = useState(null)
+  
   const buttonClick = (name) => {
     const result = about.find((item) => item.naming === name)
-
-    setNameH(result.naming)
-    setContent(result.info)
+    if (result.naming === nameH) {
+      setContent(null)
+      setNameH(null)
+    } else {
+      setNameH(result.naming)
+      setContent(result.info)
+    }
   }
   return (
     <div>
