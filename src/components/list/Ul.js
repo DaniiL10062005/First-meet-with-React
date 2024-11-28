@@ -1,4 +1,4 @@
-import { arr } from './data'
+import { arr } from '../information/data'
 import Li from './Li'
 
 export default function Ul() {

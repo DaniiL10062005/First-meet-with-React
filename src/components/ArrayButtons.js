@@ -1,11 +1,11 @@
-import Button from './Button/Button'
-import { about } from './data'
+import Button from './button/Button'
+import { about } from './information/data'
 import { useState } from 'react'
 
 export default function ArrayButtons() {
   const [content, setContent] = useState(null)
   const [nameH, setNameH] = useState(null)
-  
+
   const buttonClick = (name) => {
     const result = about.find((item) => item.naming === name)
     if (result.naming === nameH) {

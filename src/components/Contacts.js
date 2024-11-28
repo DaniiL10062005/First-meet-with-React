@@ -1,6 +1,6 @@
 import { useState } from 'react'
-import Button from './Button/Button'
-import Modal from './Modal/Modal'
+import Button from './button/Button'
+import Modal from './modal/Modal'
 
 export default function Contatcts() {
   const [name, setName] = useState('')

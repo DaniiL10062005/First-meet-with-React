@@ -2,10 +2,10 @@ import React, { useState } from 'react'
 
 import Header from './components/Header'
 import ArrayButtons from './components/ArrayButtons'
-import Ul from './components/Ul'
+import Ul from './components/list/Ul'
 import Contacts from './components/Contacts'
 import { BrowserRouter, Routes, Route } from 'react-router-dom'
-import ButtonForHeading from './components/Button/ButtonForHeading'
+import ButtonForHeading from './components/button/ButtonForHeading'
 
 function App() {
   const [isActive, setIsActive] = useState('main')
