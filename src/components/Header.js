@@ -1,6 +1,4 @@
 import { useEffect, useState } from 'react'
-import ButtonForHeading from './Button/ButtonForHeading'
-import { click } from '@testing-library/user-event/dist/click'
 
 export default function Header({ children }) {
   const [time, setTime] = useState(new Date())
